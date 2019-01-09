@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HZAudioModuleOC/Home/VC/HZMusicPlayerVC.m"
+            timestampString = "568699306.36663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "-getLocalMediaQuery"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HZMusicPlayerVC getLocalMediaQuery]"
+                  moduleName = "HZAudioModuleOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahaozhe/Desktop/%E6%88%91%E7%9A%84/%E5%8A%9F%E8%83%BD%E4%BB%A3%E7%A0%81/OC%E9%9F%B3%E9%A2%91%E7%BB%84%E4%BB%B6/HZAudioModuleOC/HZAudioModuleOC/Home/VC/HZMusicPlayerVC.m"
+                  timestampString = "568699306.547379"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HZMusicPlayerVC getLocalMediaQuery]"
+                  moduleName = "HZAudioModuleOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahaozhe/Desktop/%E6%88%91%E7%9A%84/%E5%8A%9F%E8%83%BD%E4%BB%A3%E7%A0%81/OC%E9%9F%B3%E9%A2%91%E7%BB%84%E4%BB%B6/HZAudioModuleOC/HZAudioModuleOC/Home/VC/HZMusicPlayerVC.m"
+                  timestampString = "568699306.549965"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

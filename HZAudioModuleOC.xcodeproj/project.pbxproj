@@ -21,6 +21,8 @@
 		23E14E2121DDDAEF00B52900 /* HZAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E14E2021DDDAEF00B52900 /* HZAudioManager.m */; };
 		23E14E2421DDDB4600B52900 /* HZSoundEffectObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E14E2321DDDB4600B52900 /* HZSoundEffectObj.m */; };
 		23E14E2A21DE032100B52900 /* produceSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E14E2921DE032100B52900 /* produceSound.wav */; };
+		23ED2D4121E5959000711DBF /* HZMusicPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */; };
+		23ED2D4321E5A79D00711DBF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ED2D4221E5A79D00711DBF /* MediaPlayer.framework */; };
 		847CF57C0E72F2EE655569AC /* libPods-HZAudioModuleOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558515E91CBEF906B752047 /* libPods-HZAudioModuleOC.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		23E14E2621DDF22200B52900 /* MSingletonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSingletonObj.h; sourceTree = "<group>"; };
 		23E14E2721DDF6A700B52900 /* MUtilMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUtilMacro.h; sourceTree = "<group>"; };
 		23E14E2921DE032100B52900 /* produceSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = produceSound.wav; sourceTree = "<group>"; };
+		23ED2D3F21E5959000711DBF /* HZMusicPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMusicPlayerVC.h; sourceTree = "<group>"; };
+		23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMusicPlayerVC.m; sourceTree = "<group>"; };
+		23ED2D4221E5A79D00711DBF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		7558515E91CBEF906B752047 /* libPods-HZAudioModuleOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZAudioModuleOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D62412353E9EE6F3022B26 /* Pods-HZAudioModuleOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioModuleOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC.release.xcconfig"; sourceTree = "<group>"; };
 		FBB21EDBEC4E11C30E780B47 /* Pods-HZAudioModuleOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioModuleOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23ED2D4321E5A79D00711DBF /* MediaPlayer.framework in Frameworks */,
 				847CF57C0E72F2EE655569AC /* libPods-HZAudioModuleOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +160,8 @@
 				23E14DE221DDA68300B52900 /* HomeViewController.m */,
 				2324792E21DF085E00F296F5 /* HZMusicPlayVC.h */,
 				2324792F21DF085E00F296F5 /* HZMusicPlayVC.m */,
+				23ED2D3F21E5959000711DBF /* HZMusicPlayerVC.h */,
+				23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 		5FCAD73C59B4B4501FB3100F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23ED2D4221E5A79D00711DBF /* MediaPlayer.framework */,
 				7558515E91CBEF906B752047 /* libPods-HZAudioModuleOC.a */,
 			);
 			name = Frameworks;
@@ -293,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E14E1821DDB89F00B52900 /* BaseNavigationController.m in Sources */,
+				23ED2D4121E5959000711DBF /* HZMusicPlayerVC.m in Sources */,
 				23E14DE321DDA68300B52900 /* HomeViewController.m in Sources */,
 				2324793021DF085E00F296F5 /* HZMusicPlayVC.m in Sources */,
 				23E14E2121DDDAEF00B52900 /* HZAudioManager.m in Sources */,

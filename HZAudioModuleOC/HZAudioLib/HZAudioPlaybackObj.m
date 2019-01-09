@@ -16,6 +16,9 @@
 @property (nonatomic, strong) NSTimer *timer;//用于刷新音频信息
 
 @property (nonatomic, copy) UpdateProgressCallback updateBlock;//更新进度回调
+
+@property (nonatomic, copy) DeviceStatusChangedCallback deviceBlock;//设备状态变化回调
+
 @end
 
 @implementation HZAudioPlaybackObj
@@ -28,10 +31,11 @@
 }
 
 
-- (instancetype)initAudioPlayer:(NSURL *)audioUrl updateProgress:(nonnull UpdateProgressCallback)callback{
+- (instancetype)initAudioPlayer:(NSURL *)audioUrl updateProgress:(nonnull UpdateProgressCallback)callback DeviceStatusChangedCallback:(DeviceStatusChangedCallback)deviceCallback{
     if (self = [super init]) {
         
         _updateBlock = callback;
+        _deviceBlock = deviceCallback;
         
         if (!_audioPlayer) {
             NSError *error = nil;
@@ -45,6 +49,18 @@
                 //初始化音频播放器错误
             }
             _totalTime = _audioPlayer.duration;
+            
+            //设置后台播放模式
+            AVAudioSession *audioSession=[AVAudioSession sharedInstance];
+            [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+            //测试用不用这个都可以使用蓝牙耳机
+//            [audioSession setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionAllowBluetooth error:nil];
+            [audioSession setActive:YES error:nil];
+            //添加通知，拔出耳机后暂停播放
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(routeChange:) name:AVAudioSessionRouteChangeNotification object:nil];
+            
+            //开启远程控制
+            [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
         }
     }
     return self;
@@ -100,6 +116,34 @@
 #pragma mark - 音频 delegate 方法
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     NSLog(@"音频播放完成。。。");
+    //根据实际情况播放完成可以将会话关闭，其他音频应用继续播放
+    [[AVAudioSession sharedInstance] setActive:NO error:nil];
+}
+
+
+/**
+ *  一旦输出改变则执行此方法
+ *
+ *  @param notification 输出改变通知对象
+ */
+-(void)routeChange:(NSNotification *)notification{
+    //一开始是耳机：关闭耳机，暂停；重新打开耳机，开始播放
+    //一开始是手机：打开耳机，耳机播放音乐；关闭耳机，暂停；重新打开耳机，继续播放
+    //此处用的是蓝牙耳机
+    
+    NSDictionary *dic=notification.userInfo;
+    int changeReason= [dic[AVAudioSessionRouteChangeReasonKey] intValue];
+    //表示旧输出不可用
+    if (changeReason==AVAudioSessionRouteChangeReasonOldDeviceUnavailable) {
+        [self.audioPlayer pause];
+        self.deviceBlock(HZAudioDeviceChangeStatusPause);
+    }
+    
+    //新链接设备可用
+    if (changeReason == AVAudioSessionRouteChangeReasonNewDeviceAvailable) {
+        [self.audioPlayer play];
+        self.deviceBlock(HZAudioDeviceChangeStatusPlay);
+    }
 }
 
 
@@ -112,9 +156,13 @@
 }
 
 
-- (void)dealloc{
-    self.timer.fireDate = [NSDate distantPast];//停止定时器
-    _timer = nil;
+- (void)releaseObj{
+    if (_timer) {
+        self.timer.fireDate = [NSDate distantPast];//停止定时器
+        _timer = nil;
+    }
+    //关闭远程控制
+    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
 }
 
 

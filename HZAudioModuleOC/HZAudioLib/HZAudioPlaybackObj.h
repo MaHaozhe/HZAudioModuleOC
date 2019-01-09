@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    HZAudioDeviceChangeStatusPlay,//播放
+    HZAudioDeviceChangeStatusPause,//暂停
+} HZAudioDeviceChangeStatusType;
+
 typedef void(^UpdateProgressCallback)(CGFloat progress,NSString *progressStr,NSString *totalTimeStr);
+typedef void(^DeviceStatusChangedCallback)(HZAudioDeviceChangeStatusType type);
+
 
 @interface HZAudioPlaybackObj : NSObject
 
@@ -21,7 +28,7 @@ typedef void(^UpdateProgressCallback)(CGFloat progress,NSString *progressStr,NSS
 
  @param audioUrl 音频本地/网络地址
  */
-- (instancetype)initAudioPlayer:(NSURL *)audioUrl updateProgress:(UpdateProgressCallback)callback;
+- (instancetype)initAudioPlayer:(NSURL *)audioUrl updateProgress:(UpdateProgressCallback)callback DeviceStatusChangedCallback:(DeviceStatusChangedCallback)deviceCallback;
 
 
 /**
@@ -48,6 +55,12 @@ typedef void(^UpdateProgressCallback)(CGFloat progress,NSString *progressStr,NSS
  @param currentTime 当前选中时间点
  */
 - (void)setCurrentTime:(CGFloat)currentTime;
+
+
+/**
+ 销毁定时器，关闭监听等操作
+ */
+- (void)releaseObj;
 
 @end
 

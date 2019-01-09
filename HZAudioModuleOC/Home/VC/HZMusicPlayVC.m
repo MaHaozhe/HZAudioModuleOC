@@ -42,11 +42,17 @@
     NSURL *url = [NSURL fileURLWithPath:urlStr];
     
     WS(weakSelf);
-    _playBackObj = [[HZAudioPlaybackObj alloc] initAudioPlayer:url updateProgress:^(CGFloat progress,NSString *progressStr,NSString *totalTimeStr) {
+    _playBackObj = [[HZAudioPlaybackObj alloc] initAudioPlayer:url updateProgress:^(CGFloat progress, NSString * _Nonnull progressStr, NSString * _Nonnull totalTimeStr) {
         weakSelf.progressView.progress = progress;
         weakSelf.currentTimeLab.text = progressStr;
         weakSelf.totalTimeLab.text = totalTimeStr;
         weakSelf.progressSlider.value = progress*100;
+    } DeviceStatusChangedCallback:^(HZAudioDeviceChangeStatusType type) {
+        if (type == HZAudioDeviceChangeStatusPlay) {
+            weakSelf.playOrPauseBtn.selected = NO;
+        }else if (type == HZAudioDeviceChangeStatusPause){
+            weakSelf.playOrPauseBtn.selected = YES;
+        }
     }];
     [_playBackObj playAudio];
     
@@ -241,8 +247,11 @@
 
 
 - (void)dealloc{
-    [_playBackObj stopAudio];
-    _playBackObj = nil;
+    if (_playBackObj) {
+        [_playBackObj stopAudio];
+        [_playBackObj releaseObj];
+        _playBackObj = nil;
+    }
 }
 
 @end
