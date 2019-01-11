@@ -11,6 +11,7 @@
 #import "HomeTV.h"
 #import "HZMusicPlayVC.h"//播放音乐VC
 #import "HZMusicPlayerVC.h"//MusicPlayer
+#import "HZRecordVC.h"//录音
 
 @interface HomeViewController ()
 
@@ -56,6 +57,12 @@
             {
                 HZMusicPlayerVC *musicPlayVC = [[HZMusicPlayerVC alloc] init];
                 [weakSelf.navigationController pushViewController:musicPlayVC animated:YES];
+            }
+                break;
+                case 3:
+            {
+                HZRecordVC *recordVC = [[HZRecordVC alloc] init];
+                [weakSelf.navigationController pushViewController:recordVC animated:YES];
             }
                 break;
                 

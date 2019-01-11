@@ -92,7 +92,7 @@ static NSString *cellID = @"HomeTVCellID";
 #pragma mark - set get
 -(NSMutableArray *)dataArr{
     if (!_dataArr) {
-        _dataArr = [[NSMutableArray alloc] initWithObjects:@"播放音效",@"播放频频",@"MusicPlayer",@"",@"",@"",@"",@"",@"",@"", nil];
+        _dataArr = [[NSMutableArray alloc] initWithObjects:@"播放音效",@"播放频频",@"MusicPlayer",@"录音",@"",@"",@"",@"",@"",@"", nil];
     }
     return _dataArr;
 }

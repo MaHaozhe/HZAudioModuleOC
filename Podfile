@@ -4,4 +4,6 @@
 target 'HZAudioModuleOC' do
   pod 'Masonry'
   pod 'YYCategories'
+  pod 'FMDB'
+  pod 'WBHUDManager'
 end

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8CA95430400EDD92C65FC08E5E0A190"
+               BlueprintIdentifier = "BF1F53DA80852EC7C5334115DCA8BC15"
                BlueprintName = "Pods-HZAudioModuleOC"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-HZAudioModuleOC.a">

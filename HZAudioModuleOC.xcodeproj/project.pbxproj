@@ -10,6 +10,10 @@
 		2324792B21DEFAA900F296F5 /* HZAudioPlaybackObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 2324792A21DEFAA900F296F5 /* HZAudioPlaybackObj.m */; };
 		2324792D21DF00BC00F296F5 /* The Argonauts.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2324792C21DF00BC00F296F5 /* The Argonauts.mp3 */; };
 		2324793021DF085E00F296F5 /* HZMusicPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2324792F21DF085E00F296F5 /* HZMusicPlayVC.m */; };
+		2371C64521E8759C0033C81A /* HZRecordPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2371C64421E8759C0033C81A /* HZRecordPlayerVC.m */; };
+		23C4C70321E721F000A63E06 /* HZRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4C70221E721F000A63E06 /* HZRecordVC.m */; };
+		23C4C70621E7270A00A63E06 /* HZRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4C70521E7270A00A63E06 /* HZRecordModel.m */; };
+		23C4C70921E727E400A63E06 /* HZFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C4C70821E727E400A63E06 /* HZFMDBManager.m */; };
 		23E14DE021DDA68300B52900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E14DDF21DDA68300B52900 /* AppDelegate.m */; };
 		23E14DE321DDA68300B52900 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E14DE221DDA68300B52900 /* HomeViewController.m */; };
 		23E14DE621DDA68300B52900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E14DE421DDA68300B52900 /* Main.storyboard */; };
@@ -23,6 +27,8 @@
 		23E14E2A21DE032100B52900 /* produceSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 23E14E2921DE032100B52900 /* produceSound.wav */; };
 		23ED2D4121E5959000711DBF /* HZMusicPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */; };
 		23ED2D4321E5A79D00711DBF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ED2D4221E5A79D00711DBF /* MediaPlayer.framework */; };
+		23ED2D4621E5C85200711DBF /* HZRecordObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED2D4521E5C85200711DBF /* HZRecordObj.m */; };
+		23ED2D4A21E5C8CA00711DBF /* HZHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED2D4921E5C8CA00711DBF /* HZHelp.m */; };
 		847CF57C0E72F2EE655569AC /* libPods-HZAudioModuleOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558515E91CBEF906B752047 /* libPods-HZAudioModuleOC.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +38,14 @@
 		2324792C21DF00BC00F296F5 /* The Argonauts.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Argonauts.mp3"; sourceTree = "<group>"; };
 		2324792E21DF085E00F296F5 /* HZMusicPlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMusicPlayVC.h; sourceTree = "<group>"; };
 		2324792F21DF085E00F296F5 /* HZMusicPlayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMusicPlayVC.m; sourceTree = "<group>"; };
+		2371C64321E8759C0033C81A /* HZRecordPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZRecordPlayerVC.h; sourceTree = "<group>"; };
+		2371C64421E8759C0033C81A /* HZRecordPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZRecordPlayerVC.m; sourceTree = "<group>"; };
+		23C4C70121E721F000A63E06 /* HZRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZRecordVC.h; sourceTree = "<group>"; };
+		23C4C70221E721F000A63E06 /* HZRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZRecordVC.m; sourceTree = "<group>"; };
+		23C4C70421E7270A00A63E06 /* HZRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZRecordModel.h; sourceTree = "<group>"; };
+		23C4C70521E7270A00A63E06 /* HZRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZRecordModel.m; sourceTree = "<group>"; };
+		23C4C70721E727E400A63E06 /* HZFMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZFMDBManager.h; sourceTree = "<group>"; };
+		23C4C70821E727E400A63E06 /* HZFMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZFMDBManager.m; sourceTree = "<group>"; };
 		23E14DDB21DDA68300B52900 /* HZAudioModuleOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZAudioModuleOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E14DDE21DDA68300B52900 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23E14DDF21DDA68300B52900 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +71,10 @@
 		23ED2D3F21E5959000711DBF /* HZMusicPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZMusicPlayerVC.h; sourceTree = "<group>"; };
 		23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMusicPlayerVC.m; sourceTree = "<group>"; };
 		23ED2D4221E5A79D00711DBF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		23ED2D4421E5C85200711DBF /* HZRecordObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZRecordObj.h; sourceTree = "<group>"; };
+		23ED2D4521E5C85200711DBF /* HZRecordObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZRecordObj.m; sourceTree = "<group>"; };
+		23ED2D4821E5C8CA00711DBF /* HZHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZHelp.h; sourceTree = "<group>"; };
+		23ED2D4921E5C8CA00711DBF /* HZHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZHelp.m; sourceTree = "<group>"; };
 		7558515E91CBEF906B752047 /* libPods-HZAudioModuleOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZAudioModuleOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D62412353E9EE6F3022B26 /* Pods-HZAudioModuleOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioModuleOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC.release.xcconfig"; sourceTree = "<group>"; };
 		FBB21EDBEC4E11C30E780B47 /* Pods-HZAudioModuleOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZAudioModuleOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C4C70A21E74B0E00A63E06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23C4C70421E7270A00A63E06 /* HZRecordModel.h */,
+				23C4C70521E7270A00A63E06 /* HZRecordModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		23E14DD221DDA68300B52900 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +123,7 @@
 		23E14DDD21DDA68300B52900 /* HZAudioModuleOC */ = {
 			isa = PBXGroup;
 			children = (
+				23ED2D4721E5C8B500711DBF /* Utils */,
 				23E14E2521DDF1F100B52900 /* Macro */,
 				23E14E1921DDB9F700B52900 /* Home */,
 				23E14E1521DDB88100B52900 /* Base */,
@@ -131,6 +159,8 @@
 				23E14E2321DDDB4600B52900 /* HZSoundEffectObj.m */,
 				2324792921DEFAA900F296F5 /* HZAudioPlaybackObj.h */,
 				2324792A21DEFAA900F296F5 /* HZAudioPlaybackObj.m */,
+				23ED2D4421E5C85200711DBF /* HZRecordObj.h */,
+				23ED2D4521E5C85200711DBF /* HZRecordObj.m */,
 			);
 			path = HZAudioLib;
 			sourceTree = "<group>";
@@ -147,6 +177,7 @@
 		23E14E1921DDB9F700B52900 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				23C4C70A21E74B0E00A63E06 /* Model */,
 				23E14E1B21DDBA4F00B52900 /* View */,
 				23E14E1A21DDBA4500B52900 /* VC */,
 			);
@@ -162,6 +193,10 @@
 				2324792F21DF085E00F296F5 /* HZMusicPlayVC.m */,
 				23ED2D3F21E5959000711DBF /* HZMusicPlayerVC.h */,
 				23ED2D4021E5959000711DBF /* HZMusicPlayerVC.m */,
+				23C4C70121E721F000A63E06 /* HZRecordVC.h */,
+				23C4C70221E721F000A63E06 /* HZRecordVC.m */,
+				2371C64321E8759C0033C81A /* HZRecordPlayerVC.h */,
+				2371C64421E8759C0033C81A /* HZRecordPlayerVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -182,6 +217,17 @@
 				23E14E2721DDF6A700B52900 /* MUtilMacro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		23ED2D4721E5C8B500711DBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23ED2D4821E5C8CA00711DBF /* HZHelp.h */,
+				23ED2D4921E5C8CA00711DBF /* HZHelp.m */,
+				23C4C70721E727E400A63E06 /* HZFMDBManager.h */,
+				23C4C70821E727E400A63E06 /* HZFMDBManager.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		32166D349B871EC978362BDD /* Pods */ = {
@@ -213,6 +259,7 @@
 				23E14DD721DDA68300B52900 /* Sources */,
 				23E14DD821DDA68300B52900 /* Frameworks */,
 				23E14DD921DDA68300B52900 /* Resources */,
+				95356BAE43EF3C5ACB835DA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +323,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		95356BAE43EF3C5ACB835DA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/WBHUDManager/WBHUDManager/MBProgressHUDWBAddtional/MBProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZAudioModuleOC/Pods-HZAudioModuleOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CC722FB3C56D8502A80DB163 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,12 +371,18 @@
 				23E14E1821DDB89F00B52900 /* BaseNavigationController.m in Sources */,
 				23ED2D4121E5959000711DBF /* HZMusicPlayerVC.m in Sources */,
 				23E14DE321DDA68300B52900 /* HomeViewController.m in Sources */,
+				23C4C70321E721F000A63E06 /* HZRecordVC.m in Sources */,
+				2371C64521E8759C0033C81A /* HZRecordPlayerVC.m in Sources */,
+				23C4C70921E727E400A63E06 /* HZFMDBManager.m in Sources */,
 				2324793021DF085E00F296F5 /* HZMusicPlayVC.m in Sources */,
 				23E14E2121DDDAEF00B52900 /* HZAudioManager.m in Sources */,
 				23E14DEE21DDA68300B52900 /* main.m in Sources */,
 				23E14E2421DDDB4600B52900 /* HZSoundEffectObj.m in Sources */,
 				2324792B21DEFAA900F296F5 /* HZAudioPlaybackObj.m in Sources */,
 				23E14E1E21DDBB8D00B52900 /* HomeTV.m in Sources */,
+				23ED2D4621E5C85200711DBF /* HZRecordObj.m in Sources */,
+				23ED2D4A21E5C8CA00711DBF /* HZHelp.m in Sources */,
+				23C4C70621E7270A00A63E06 /* HZRecordModel.m in Sources */,
 				23E14DE021DDA68300B52900 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
