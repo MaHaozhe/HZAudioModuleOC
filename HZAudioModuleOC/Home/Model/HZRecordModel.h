@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HZRecordModel : NSObject
 
-@property (nonatomic, strong) NSString *recordID;//录音ID
+@property (nonatomic, copy) NSString *recordID;//录音ID
 
-@property (nonatomic, strong) NSString *recordTitle;//录音文件名称
+@property (nonatomic, copy) NSString *recordTitle;//录音文件名称
 
 @end
 
